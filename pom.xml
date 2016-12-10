@@ -5,6 +5,11 @@
   <packaging>war</packaging>
   <name>DDDSample</name>
   <version>2.0-SNAPSHOT</version>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.4.2.RELEASE</version>
+  </parent>
   <description>This application shows a few key concepts of
     Domain Driven Design implemented in Enterprise Java.
   </description>
@@ -68,7 +73,7 @@
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- Dependencies -->
-    <spring.version>4.2.1.RELEASE</spring.version>
+    <spring.version>4.3.4.RELEASE</spring.version>
     <cxf.version>3.0.3</cxf.version>
     <!-- Plugin versions -->
     <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
