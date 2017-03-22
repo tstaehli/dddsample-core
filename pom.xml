@@ -74,7 +74,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- Dependencies -->
     <spring.version>4.3.4.RELEASE</spring.version>
-    <cxf.version>3.0.3</cxf.version>
     <!-- Plugin versions -->
     <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
     <maven-jar-plugin.version>2.6</maven-jar-plugin.version>
@@ -190,6 +189,11 @@
           <artifactId>spring-boot-starter-thymeleaf</artifactId>
       </dependency>
       <dependency>
+          <groupId>org.apache.cxf</groupId>
+          <artifactId>cxf-spring-boot-starter-jaxws</artifactId>
+          <version>3.1.7</version>
+      </dependency>
+      <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
       <version>4.3.5.Final</version>
@@ -258,16 +262,6 @@
       <artifactId>easymock</artifactId>
       <version>2.3</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-frontend-jaxws</artifactId>
-      <version>${cxf.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-transports-http</artifactId>
-      <version>${cxf.version}</version>
     </dependency>
   </dependencies>
 
