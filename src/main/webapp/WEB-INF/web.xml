@@ -55,11 +55,12 @@
     <url-pattern>/admin/*</url-pattern>
   </servlet-mapping>
 
+<!-- 
   <servlet>
     <servlet-name>jaxws</servlet-name>
     <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
   </servlet>
-
+ -->
   <servlet-mapping>
     <servlet-name>jaxws</servlet-name>
     <url-pattern>/ws/*</url-pattern>
