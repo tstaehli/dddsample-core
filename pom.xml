@@ -319,20 +319,7 @@
 				folder. -->
 			<!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
 			<id>openshift</id>
-			<dependencies>
-				<dependency>
-					<groupId>org.apache.cxf</groupId>
-					<artifactId>cxf-rt-frontend-jaxws</artifactId>
-					<version>${cxf.version}</version>
-					<scope>provided</scope>
-				</dependency>
-				<dependency>
-					<groupId>org.apache.cxf</groupId>
-					<artifactId>cxf-rt-transports-http</artifactId>
-					<version>${cxf.version}</version>
-					<scope>provided</scope>
-				</dependency>
-			</dependencies>
+			
 			<build>
 				<finalName>DDD SampleApp</finalName>
 				<plugins>
@@ -343,7 +330,6 @@
 						<configuration>
 							<failOnMissingWebXml>false</failOnMissingWebXml>
 							<outputDirectory>target</outputDirectory>
-							<warName>ROOT</warName>
 						</configuration>
 					</plugin>
 				</plugins>
